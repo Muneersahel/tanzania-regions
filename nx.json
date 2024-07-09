@@ -23,7 +23,13 @@
       "!libs/scraper"
     ],
     "version": {
-      "preVersionCommand": "npx nx build regions"
+      "preVersionCommand": "npx nx build regions",
+      "conventionalCommits": true
+    },
+    "changelog": {
+      "workspaceChangelog": {
+        "createRelease": "github"
+      }
     }
   },
   "targetDefaults": {

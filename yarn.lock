@@ -2599,7 +2599,7 @@
     consola "^2.15.0"
     node-fetch "^2.6.1"
 
-"@nx/angular@19.4.1", "@nx/angular@^19.4.1":
+"@nx/angular@19.4.1":
   version "19.4.1"
   resolved "https://registry.yarnpkg.com/@nx/angular/-/angular-19.4.1.tgz#bb8fd71fd48fc4cf426bd7b6b629049c3757868e"
   integrity sha512-0vRaaECnoOjPQH5AKd9b+sbWXqJWRMaEBlGfqtK2MPPbREib77sJjCRycVYoJraFRoq+fw0G4bHhuKfUVLB8Iw==
