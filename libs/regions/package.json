@@ -1,5 +1,5 @@
 {
-  "name": "@tanzania/regions",
+  "name": "tanzania-regions",
   "version": "0.0.1",
   "publishConfig": {
     "access": "public"
