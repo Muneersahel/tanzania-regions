@@ -2,7 +2,9 @@
   "name": "@tanzania-regions/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "release": "npx nx release"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~18.0.0",

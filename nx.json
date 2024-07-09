@@ -1,7 +1,10 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
-    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "default": [
+      "{projectRoot}/**/*",
+      "sharedGlobals"
+    ],
     "production": [
       "default",
       "!{projectRoot}/.eslintrc.json",
@@ -14,16 +17,40 @@
     ],
     "sharedGlobals": []
   },
+  "release": {
+    "projects": [
+      "libs/*",
+      "!libs/scraper"
+    ],
+    "version": {
+      "preVersionCommand": "npx nx build regions"
+    }
+  },
   "targetDefaults": {
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/libs/{projectName}"
+      }
+    },
     "@nx/js:tsc": {
       "cache": true,
-      "dependsOn": ["^build"],
-      "inputs": ["production", "^production"]
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "production",
+        "^production"
+      ]
     },
     "@angular-devkit/build-angular:application": {
       "cache": true,
-      "dependsOn": ["^build"],
-      "inputs": ["production", "^production"]
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "production",
+        "^production"
+      ]
     }
   },
   "plugins": [
@@ -38,7 +65,9 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/regions-api-e2e/**/*"]
+      "exclude": [
+        "apps/regions-api-e2e/**/*"
+      ]
     },
     {
       "plugin": "@nx/webpack/plugin",
