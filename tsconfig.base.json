@@ -17,8 +17,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@tanzania/scraper": ["libs/scraper/src/index.ts"],
-      "@tanzania/regions": ["libs/regions/src/index.ts"]
+      "@tanzania/regions": ["libs/regions/src/index.ts"],
+      "@tanzania/scraper": ["libs/scraper/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
