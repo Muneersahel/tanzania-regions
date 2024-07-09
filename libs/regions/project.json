@@ -1,0 +1,19 @@
+{
+  "name": "regions",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/regions/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/regions",
+        "main": "libs/regions/src/index.ts",
+        "tsConfig": "libs/regions/tsconfig.lib.json",
+        "assets": ["libs/regions/*.md"]
+      }
+    }
+  }
+}
