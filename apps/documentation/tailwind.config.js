@@ -7,6 +7,7 @@ module.exports = {
     join(__dirname, 'src/**/!(*.stories|*.spec).{ts,html}'),
     ...createGlobPatternsForDependencies(__dirname),
   ],
+  presets: [require('@spartan-ng/ui-core/hlm-tailwind-preset')],
   theme: {
     extend: {},
   },

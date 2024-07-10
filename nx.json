@@ -57,6 +57,16 @@
         "production",
         "^production"
       ]
+    },
+    "@nx/angular:ng-packagr-lite": {
+      "cache": true,
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "production",
+        "^production"
+      ]
     }
   },
   "plugins": [
@@ -89,6 +99,10 @@
       "e2eTestRunner": "none",
       "linter": "eslint",
       "style": "css",
+      "unitTestRunner": "jest"
+    },
+    "@nx/angular:library": {
+      "linter": "eslint",
       "unitTestRunner": "jest"
     }
   }
