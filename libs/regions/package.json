@@ -1,6 +1,27 @@
 {
   "name": "tanzania-regions",
   "version": "0.0.1",
+  "author": {
+    "name": "Muneersahel",
+    "email": "saidmunir73@gmail.com",
+    "url": "https://github.com/Muneersahel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Muneersahel/tanzania-regions.git"
+  },
+  "description": "",
+  "keywords": [
+    "mitaa",
+    "location",
+    "continents",
+    "countries",
+    "regions",
+    "districts",
+    "ward",
+    "streets",
+    "tanzania"
+  ],
   "publishConfig": {
     "access": "public"
   },

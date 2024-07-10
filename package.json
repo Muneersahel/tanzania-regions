@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "release": "npx nx release"
+    "release": "npx nx release",
+    "format": "prettier --write '**/**/*.ts'"
   },
   "private": true,
   "dependencies": {
