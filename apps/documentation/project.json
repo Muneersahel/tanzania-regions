@@ -7,7 +7,7 @@
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:application",
+      "executor": "@ng-doc/builder:application",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/documentation",
@@ -18,16 +18,35 @@
         "assets": [
           {
             "glob": "**/*",
+            "input": "node_modules/@ng-doc/app/assets",
+            "output": "assets/ng-doc/app"
+          },
+          {
+            "glob": "**/*",
+            "input": "node_modules/@ng-doc/ui-kit/assets",
+            "output": "assets/ng-doc/ui-kit"
+          },
+          {
+            "glob": "**/*",
+            "input": "ng-doc/documentation/assets",
+            "output": "assets/ng-doc"
+          },
+          {
+            "glob": "**/*",
             "input": "apps/documentation/public"
           }
         ],
-        "styles": ["apps/documentation/src/styles.css"],
+        "styles": [
+          "node_modules/@ng-doc/app/styles/global.css",
+          "apps/documentation/src/styles.css"
+        ],
         "scripts": [],
         "server": "apps/documentation/src/main.server.ts",
         "prerender": true,
         "ssr": {
           "entry": "apps/documentation/server.ts"
-        }
+        },
+        "allowedCommonJsDependencies": ["@ng-doc/core"]
       },
       "configurations": {
         "production": {
@@ -54,7 +73,7 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@angular-devkit/build-angular:dev-server",
+      "executor": "@ng-doc/builder:dev-server",
       "configurations": {
         "production": {
           "buildTarget": "documentation:build:production"
