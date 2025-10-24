@@ -10,17 +10,20 @@
     "type": "git",
     "url": "https://github.com/Muneersahel/tanzania-regions.git"
   },
-  "description": "",
+  "description": "A comprehensive TypeScript/JavaScript library providing structured data for all Tanzania regions, districts, and wards. Zero dependencies, fully typed, and framework-agnostic.",
   "keywords": [
-    "mitaa",
-    "location",
-    "continents",
-    "countries",
+    "tanzania",
     "regions",
     "districts",
-    "ward",
-    "streets",
-    "tanzania"
+    "wards",
+    "locations",
+    "geography",
+    "administrative",
+    "mitaa",
+    "typescript",
+    "location-data",
+    "east-africa",
+    "africa"
   ],
   "publishConfig": {
     "access": "public"
